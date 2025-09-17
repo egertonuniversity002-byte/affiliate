@@ -1541,7 +1541,7 @@
         const category = document.getElementById('fCategory').value;
         const active = document.getElementById('fActive').value;
 
-        const tasksData = await apiCall('/admin/tasks');
+        const tasksData = await apiCall('/admin/tasks/');
 
         if (tasksData.success) {
           tasks = tasksData.tasks.map(task => ({
